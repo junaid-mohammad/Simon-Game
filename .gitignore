@@ -1,0 +1,10 @@
+# Ignore any temporary files or logs
+*.log
+*.tmp
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules if using Node.js in the future
+node_modules/
