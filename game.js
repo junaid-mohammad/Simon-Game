@@ -39,7 +39,11 @@ function checkAnswer(currentLevel) {
       setTimeout(function () {
         $("body").removeClass("game-over");
       }, 200);
-      var score = level - 1;
+      // Update the player's final score.
+      var score = 0;
+      if (level != 0) {
+        score = level - 1;
+      }
       $("#level-title").html("Game Over, Final Score:" + score + "<br>Press Any Key to Restart");
       // Call startOver() if the user gets the sequence wrong.
       startOver();
